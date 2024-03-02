@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Web tervezés</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>Web tervezés lab. gyak
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Kezdőlap</a></li>
+                        <li class="selected"><a href="urlap.html">Űrlap</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="wrapper">
+                <aside class="leftmenu">
+                    <h3>Aside menü</h3>
+                    <br>
+
+                </aside>
+
+                <div class="main">
+
+                    <form method="post">
+                        <fieldset>
+                            <legend>Add meg az alábbi adatokat!</legend>
+                            <label>Név<span class="red-star">*</span></label>
+                            <input type="text" id="nev" required>
+                            <br>
+
+                            <label>E-mail<span class="red-star">*</span></label>
+                            <input type="email" id="email" required>
+                            <br>
+
+                            <label>Tel.<span class="red-star">*</span></label>
+                            <input type="tel" id="tel" placeholder="+36301234567" pattern="[+]{1}[0-9]{10,}"
+                                required="">
+                            <small>Formátum: +36301234567</small><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Válassz</legend>
+                            <input type="radio" name="ert" value="1" checked>
+                            <label>Opció 1</label><br>
+                            <input type="radio" name="ert" value="2">
+                            <label>Opció 2</label> <br>
+                            <input type="radio" name="ert" value="3">
+                            <label>Opció 3</label><br>
+                            <input type="radio" name="ert" value="4">
+                            <label>Opció 4</label><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Ide írhatsz megjegyzést!</legend>
+                            <textarea class="boxSizing-borderBox"></textarea>
+                        </fieldset>
+
+                        <input type="submit" value="Küld" id="kuld">
+                    </form>
+
+                </div>
+            </div>
+
+            <footer>
+                &copy;
+                <script>document.write(new Date().getFullYear())</script>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
