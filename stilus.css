@@ -166,6 +166,38 @@ h2 {
     border-bottom: solid 2px;
 }
 
+
+.videos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.videos-container a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.video-card {
+    width: 30%;
+    margin: .5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1%;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.1);
+
+}
+
+.video-thumbnail {
+    width: 100%;
+}
+
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -448,5 +480,23 @@ button {
         --link-color: #dee2e6;
         --blockqoute-color: #6c757d;
         --blockqoute-textcolor: #dee2e6;
+    }
+}
+
+/* RESZPONZIVITAS */
+
+@media screen and (max-width: 1000px) {
+    .video-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .videos-container {
+        gap: 10px;
+    }
+
+    .video-card {
+        width: 80%;
     }
 }
