@@ -6,35 +6,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juttatások</title>
-    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="css/stilus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" media="print" href="print.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 
 <body>
-    <header class="wrapper">
-        <img src="img/logo.jpg" alt="empirelogo" id="logoimage">
-        <nav>
-            <ul class="flex">
-                <li class="not-selected-menu"><a href="szoveg.html">Caesar</a></li>
-                <li class="not-selected-menu"><a href="videok.html">Videók</a></li>
-                <li class="not-selected-menu"><a href="missions.html">Missziók</a></li>
-                <li id="selected-menu"><a href="juttatasok.html">Juttatások</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="jelentkezes.html" class="button-apply">Jelentkezés</a>
+    <header>
+        <div class="wrapper">
+            <img src="img/logo.jpg" alt="empirelogo" id="logoimage">
+            <nav>
+                <ul class="flex">
+                    <li class="not-selected-menu"><a href="index.html">Caesar</a></li>
+                    <li class="not-selected-menu"><a href="videok.html">Edzések</a></li>
+                    <li class="not-selected-menu"><a href="missions.html">Missziók</a></li>
+                    <li id="selected-menu"><a href="juttatasok.html">Juttatások</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="jelentkezes.html" class="button-apply">Jelentkezés</a>
+            </div>
         </div>
     </header>
     <main>
         <div class="content">
             <div class="slide-up">
-                <h3 style="line-height:1.35em; font-size:40px;">
-                    <span style="text-decoration:underline; font-weight:bold;">Juttatások</span>
+                <h3>
+                    <span>Juttatások</span>
                 </h3>
                 <p>
                     <br>
@@ -50,57 +53,58 @@
                 </p>
                 <div style="overflow-x:auto">
                     <table class="juttatasok">
+                        <caption>Juttatások</caption>
                         <thead>
                             <tr>
                                 <th>Rang/Beosztás</th>
-                                <th>Britannia</th>
-                                <th>Pannónia</th>
-                                <th>Gallia</th>
-                                <th>Egyiptom</th>
+                                <th id="brittannia">Britannia</th>
+                                <th id="pannon">Pannónia</th>
+                                <th id="gallia">Gallia</th>
+                                <th id="egyipt">Egyiptom</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Legatus Legionis</td>
-                                <td>2000 dénár</td>
-                                <td>1700 dénár</td>
-                                <td>3000 dénár</td>
-                                <td>1200 dénár</td>
+                                <td headers="brittannia">2000 dénár</td>
+                                <td headers="pannon">1700 dénár</td>
+                                <td headers="gallia">3000 dénár</td>
+                                <td headers="egyipt">1200 dénár</td>
                             </tr>
                             <tr>
                                 <td>Tribunus Angusticlavius</td>
-                                <td>1800 dénár</td>
-                                <td>1500 dénár</td>
-                                <td>2700 dénár</td>
-                                <td>1000 dénár</td>
+                                <td headers="brittannia">1800 dénár</td>
+                                <td headers="pannon">1500 dénár</td>
+                                <td headers="gallia">2700 dénár</td>
+                                <td headers="egyipt">1000 dénár</td>
                             </tr>
                             <tr>
                                 <td>Tribunus Militum</td>
-                                <td>1500 dénár</td>
-                                <td>1300 dénár</td>
-                                <td>2400 dénár</td>
-                                <td>850 dénár</td>
+                                <td headers="brittannia"> 1500 dénár</td>
+                                <td headers="pannon">1300 dénár</td>
+                                <td headers="gallia">2400 dénár</td>
+                                <td headers="egyipt">850 dénár</td>
                             </tr>
                             <tr>
                                 <td>Praefectus Castrorum</td>
-                                <td>1300 dénár</td>
-                                <td>1100 dénár</td>
-                                <td>2000 dénár</td>
-                                <td>700 dénár</td>
+                                <td headers="brittannia">1300 dénár</td>
+                                <td headers="pannon">1100 dénár</td>
+                                <td headers="gallia">2000 dénár</td>
+                                <td headers="egyipt">700 dénár</td>
                             </tr>
                             <tr>
                                 <td>Centurio</td>
-                                <td>1100 dénár</td>
-                                <td>900 dénár</td>
-                                <td>1500 dénár</td>
-                                <td>500 dénár</td>
+                                <td headers="brittannia">1100 dénár</td>
+                                <td headers="pannon">900 dénár</td>
+                                <td headers="gallia">1500 dénár</td>
+                                <td headers="egyipt">500 dénár</td>
                             </tr>
                             <tr>
                                 <td>Optio</td>
-                                <td>900 dénár</td>
-                                <td>700 dénár</td>
-                                <td>1100 dénár</td>
-                                <td>250 dénár</td>
+                                <td headers="brittannia">900 dénár</td>
+                                <td headers="pannon">700 dénár</td>
+                                <td headers="gallia">1100 dénár</td>
+                                <td headers="egyipt">250 dénár</td>
                             </tr>
                         </tbody>
                     </table>
