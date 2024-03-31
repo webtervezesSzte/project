@@ -25,6 +25,19 @@ footer,
     display: flex;
 }
 
+/*PLUSZ ANIMÁCIÓ*/
+
+.button-apply {
+
+    transition: width 1s, height 1s, background-color 1s color 1s; 
+}
+
+    .button-apply:active {
+        
+        background-color: gold;
+        color: red;
+    }
+
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
