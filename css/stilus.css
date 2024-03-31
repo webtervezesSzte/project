@@ -25,19 +25,6 @@ footer,
     display: flex;
 }
 
-/*PLUSZ ANIMÁCIÓ*/
-
-.button-apply {
-
-    transition: width 1s, height 1s, background-color 1s color 1s; 
-}
-
-    .button-apply:active {
-        
-        background-color: gold;
-        color: red;
-    }
-
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -665,5 +652,33 @@ button,
 
     header {
         position: relative;
+    }
+}
+
+/*PLUSZ ANIMÁCIÓ*/
+
+.button-apply {
+
+    transition: width 1s, height 1s, background-color 1s color 1s; 
+}
+
+    .button-apply:active {
+        
+        background-color: gold;
+        color: red;
+    }
+
+.content {
+
+    animation: reveal 5s steps(40);
+}
+
+@keyframes reveal {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
     }
 }
