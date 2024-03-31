@@ -33,96 +33,94 @@
         </div>
     </header>
     <main>
-        <div class="content">
-            <div class="slide-up">
-                <form action="/">
-                    <p class="form-text"><strong>A jelentkezéshez kérjük töltsd ki az alábbi űrlapot</strong>
-                    </p>
+        <div class="content form-container">
+            <form action="/">
+                <p class="form-text"><strong>A jelentkezéshez kérjük töltsd ki az alábbi űrlapot</strong>
+                </p>
 
-                    <fieldset>
-                        <legend>Általános információk</legend>
-                        <div class="form-field-inline">
-                            <div class="form-field">
-                                <label for="name">Teljes név<span>*</span></label>
-                                <input id="name" type="text" name="text" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="bname">Születési név<span>*</span></label>
-                                <input id="bname" type="text" name="text" required>
-                            </div>
-                        </div>
-                        <div class="name-form-field">
-                            <div class="form-field">
-                                <label for="bdate">Születési idő<span>*</span></label>
-                                <input id="bdate" type="date" name="bdate" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="bplace">Születési hely<span>*</span></label>
-                                <input id="bplace" type="text" name="bplace" required>
-                            </div>
-                        </div>
-
+                <fieldset>
+                    <legend>Általános információk</legend>
+                    <div class="form-field-inline">
                         <div class="form-field">
-                            <label for="address">Cím<span>*</span></label>
-                            <input id="address" type="text" name="text" placeholder="Utca házszám" required>
-                        </div>
-
-                        <div class="form-field-inline">
-                            <div class="form-field">
-                                <input type="text" name="city" placeholder="Város" required>
-                            </div>
-                            <div class="form-field">
-                                <input type="text" name="postcode" placeholder="Irányítószám" required>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Harcos információk</legend>
-                        <div class="form-field">
-                            <label for="textarea-tapasztalat">Harci tapasztalat</label>
-                            <br>
-                            <textarea id="textarea-tapasztalat" name="tapasztalat" rows="4"
-                                placeholder="Add meg, hogy milyen korábbi csatákban vagy edzéseken vettél részt."></textarea>
-                        </div>
-
-                        <div class="form-field">
-                            <label>Fegyver tapasztalat<span>*</span></label><br><br>
-                            <div class="checboxcontainer">
-                                <input type="checkbox" id="weapon1" name="weapon1" value="Hasta">
-                                <label for="weapon1">Hasta</label>
-                                <br>
-                                <input type="checkbox" id="weapon2" name="weapon2" value="Gladius">
-                                <label for="weapon2">Gladius </label>
-                                <br>
-                                <input type="checkbox" id="weapon3" name="weapon3" value="Pilum">
-                                <label for="weapon3">Pilum</label>
-                            </div>
+                            <label for="name">Teljes név<span>*</span></label>
+                            <input id="name" type="text" name="text" required>
                         </div>
                         <div class="form-field">
-                            <label>Van saját páncélod?<span>*</span></label>
-                            <br>
-                            <input type="radio" id="armorYes" name="armor" value="armorYes">
-                            <label for="armorYes">Igen</label><br>
-                            <input type="radio" id="armorNo" name="armor" value="armorNo">
-                            <label for="armorNo">Nem</label>
+                            <label for="bname">Születési név<span>*</span></label>
+                            <input id="bname" type="text" name="text" required>
                         </div>
-                        <div class="form-field">
-                            <label for="textarea-motivation">Miért szeretnél
-                                csatlakozni?<span>*</span></label>
-                            <br>
-                            <textarea id="textarea-motivation" name="motivation" rows="4"
-                                placeholder="Írd le mi motivál téged, hogy csatlakozz a Római hadseregbe."
-                                required></textarea>
-                        </div>
-                    </fieldset>
-                    <div class="btn-block">
-                        <input type="reset" value="Reset" class="button-reset">
-                        <button>JELENTKEZÉS</button>
                     </div>
-                </form>
-            </div>
+                    <div class="name-form-field">
+                        <div class="form-field">
+                            <label for="bdate">Születési idő<span>*</span></label>
+                            <input id="bdate" type="date" name="bdate" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="bplace">Születési hely<span>*</span></label>
+                            <input id="bplace" type="text" name="bplace" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="address">Cím<span>*</span></label>
+                        <input id="address" type="text" name="text" placeholder="Utca házszám" required>
+                    </div>
+
+                    <div class="form-field-inline">
+                        <div class="form-field">
+                            <input type="text" name="city" placeholder="Város" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" name="postcode" placeholder="Irányítószám" required>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Harcos információk</legend>
+                    <div class="form-field">
+                        <label for="textarea-tapasztalat">Harci tapasztalat</label>
+                        <br>
+                        <textarea id="textarea-tapasztalat" name="tapasztalat" rows="4"
+                            placeholder="Add meg, hogy milyen korábbi csatákban vagy edzéseken vettél részt."></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Fegyver tapasztalat<span>*</span></label><br><br>
+                        <div class="checboxcontainer">
+                            <input type="checkbox" id="weapon1" name="weapon1" value="Hasta">
+                            <label for="weapon1">Hasta</label>
+                            <br>
+                            <input type="checkbox" id="weapon2" name="weapon2" value="Gladius">
+                            <label for="weapon2">Gladius </label>
+                            <br>
+                            <input type="checkbox" id="weapon3" name="weapon3" value="Pilum">
+                            <label for="weapon3">Pilum</label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label>Van saját páncélod?<span>*</span></label>
+                        <br>
+                        <input type="radio" id="armorYes" name="armor" value="armorYes">
+                        <label for="armorYes">Igen</label><br>
+                        <input type="radio" id="armorNo" name="armor" value="armorNo">
+                        <label for="armorNo">Nem</label>
+                    </div>
+                    <div class="form-field">
+                        <label for="textarea-motivation">Miért szeretnél
+                            csatlakozni?<span>*</span></label>
+                        <br>
+                        <textarea id="textarea-motivation" name="motivation" rows="4"
+                            placeholder="Írd le mi motivál téged, hogy csatlakozz a Római hadseregbe."
+                            required></textarea>
+                    </div>
+                </fieldset>
+                <div class="btn-block">
+                    <input type="reset" value="Reset" class="button-reset">
+                    <button>JELENTKEZÉS</button>
+                </div>
+            </form>
         </div>
         <footer>
             <p></p>
